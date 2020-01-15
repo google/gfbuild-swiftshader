@@ -31,6 +31,7 @@ case "$(uname)" in
   NINJA_OS="linux"
   BUILD_PLATFORM="Linux_x64"
   PYTHON="python3"
+  CMAKE_OPTIONS+=("-DCMAKE_C_COMPILER=gcc-7" "-DCMAKE_CXX_COMPILER=g++-7")
   ;;
 
 "Darwin")
