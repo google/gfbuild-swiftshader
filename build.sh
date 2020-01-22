@@ -139,7 +139,7 @@ case "$(uname)" in
   SWIFT_SHADER_PLATFORM_OUTPUT="Darwin"
   ;;
 
-"MINGW"*)
+"MINGW"*|"MSYS_NT"*)
   SWIFT_SHADER_PLATFORM_OUTPUT="Windows"
   ;;
 
@@ -160,7 +160,7 @@ case "$(uname)" in
 "Darwin")
   ;;
 
-"MINGW"*)
+"MINGW"*|"MSYS_NT"*)
   "${PYTHON}" "${WORK}/add_pdbs.py" "${BUILD_DIR}" "${INSTALL_DIR}"
   ;;
 
